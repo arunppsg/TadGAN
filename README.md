@@ -22,3 +22,6 @@ The trained model is saved in the `Model` directory. The training is incomplete 
 2. Delete the contents of the directory `Model`.
 
 3. Change the file name `exchange-2_cpc_results.csv` in `main.py` to the name of your dataset.
+
+## Note:
+The architecture in the original paper uses `linear` activation function but the activation function here used is `sigmoid`.
