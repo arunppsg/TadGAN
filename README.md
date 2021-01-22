@@ -13,4 +13,12 @@ The model implements an encoder and decoder as generator and two critics as disc
 
 ## Pretrained Model:
 
-The trained model is saved in the `Model` directory. The model has to be retrained for other datasets.
+The trained model is saved in the `Model` directory. The training is incomplete and the model has to be retrained for other datasets.
+
+## Usage:
+
+1. Format of the dataset - The dataset should have a column names as `value` containing the signals. 
+
+2. Delete the contents of the directory `Model`.
+
+3. Change the file name `exchange-2_cpc_results.csv` in `main.py` to the name of your dataset.
