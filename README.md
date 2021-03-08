@@ -22,3 +22,7 @@ The model implements an encoder and decoder as generator and two critics as disc
 2. Delete the contents of the directory `Model`.
 
 3. Change the file name `exchange-2_cpc_results.csv` in `main.py` to the name of your dataset.
+
+## Note:
+
+This is an independent implementation and I am not related to the authors of the paper.
