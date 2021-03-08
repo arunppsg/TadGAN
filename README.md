@@ -1,27 +1,24 @@
 # TadGAN: Time Series Anomaly Detection Using Generative Adversarial Networks
 
-This is a Python3 / [Tensorflow](https://www.tensorflow.org/) implementation 
+This is a Python3 / [Pytorch](https://pytorch.org/) implementation 
 of [TadGAN](https://arxiv.org/abs/2009.07769) paper.
 
 ## Data:
 
-The model has been trained on `Exhange 2 - CPC Results` signal from [NAB real ad exhange](https://github.com/numenta/NAB/tree/master/data/realAdExchange) dataset. The anomaly labels for the signal can be found in the [labels folder](https://github.com/numenta/NAB/tree/master/labels).
-
-## Architecture:
-
-The model implements an encoder and decoder as generator and two critics as discriminators as described in the paper. The loss function is wasserstein loss with gradient penalty.
+The TadGAN architecture can be used for detecting anomalies in time series data.
 
 ## Pretrained Model:
 
 The trained model is saved in the `Model` directory. The training is incomplete and the model has to be retrained for other datasets.
 
+## Architecture:
+
+The model implements an encoder and decoder as generator and two critics as discriminators as described in the paper. The loss function is wasserstein loss with gradient penalty.
+
 ## Usage:
 
-1. Format of the dataset - The dataset should have a column names as `value` containing the signals. 
+1. Format of the dataset - The dataset should have a column names as `signal` containing the signals. 
 
 2. Delete the contents of the directory `Model`.
 
 3. Change the file name `exchange-2_cpc_results.csv` in `main.py` to the name of your dataset.
-
-## Note:
-The architecture in the original paper uses `linear` activation function but the activation function here used is `sigmoid`.
