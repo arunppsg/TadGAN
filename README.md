@@ -1,7 +1,7 @@
 # TadGAN: Time Series Anomaly Detection Using Generative Adversarial Networks
 
 This is a Python3 / [Pytorch](https://pytorch.org/) implementation 
-of [TadGAN](https://arxiv.org/abs/2009.07769) paper.
+of [TadGAN](https://arxiv.org/abs/2009.07769) paper. The associated blog explaining the architecture details can be found [here](https://arunpalaniappan.github.io/2021/time-series-anomaly-detection-using-GAN.html).
 
 ## Data:
 
