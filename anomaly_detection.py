@@ -102,7 +102,7 @@ def detect_anomaly(anomaly_score):
     for i in range(0, len(anomaly_score) - window_size, step_size):
         window_elts = anomaly_score[i:i+window_size]
         window_mean = np.mean(window_elts)
-        window_std = np.std(window_mean)
+        window_std = np.std(window_elts)
 
         for j, elt in enumerate(window_elts):
             if (window_mean - 3 * window_std) < elt < (window_mean + 3 * window_std):
