@@ -17,7 +17,7 @@ The model implements an encoder and decoder as generator and two critics as disc
 
 ## Usage:
 
-1. Format of the dataset - The dataset should have a column names as `signal` containing the signals. 
+1. Format of the dataset - The dataset should have a column name as `signal` containing the signals and a column with name `anomaly` containing the true labels (used during validation). 
 
 2. Delete the contents of the directory `Model`.
 
